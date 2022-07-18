@@ -1,0 +1,61 @@
+﻿@model To_do_list_NET_Club.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="/lib/fonts/StyleSheet.css">
+     <link rel="stylesheet" href="/lib/fonts/script.js">
+    <style>
+       
+    </style>
+</head>
+<body>
+<h2><b>Log in</b></h2>
+
+
+<div class="row">
+    <div class="col-md-4">
+         <fieldset>
+        <form asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
+           
+            <div class="validation, text-danger" asp-validation-summary="ModelOnly"></div>
+            <div>
+                
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">Enter Email</label>
+                    <input type="text" asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label">Enter password</label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger" />
+                </div>
+                <div class="form-group">
+                    <div class="buttons">
+                    <input type="submit" value="Login" class="btn-hover" />
+                    
+                   
+                      <a asp-action="Register" asp-controller="Account" class="btn-hover">Registration</a>
+                      </div>
+                </div>
+                
+            </div>
+            
+        </form>
+        </fieldset>
+        <div class="image">
+        <img src="~/lib/Images/nordwood-themes-ivP3TYdLvw0-unsplash.jpg" />
+        </div>
+    </div>
+   <canvas id="canvas"></canvas>
+</div>
+</body>
+</html>

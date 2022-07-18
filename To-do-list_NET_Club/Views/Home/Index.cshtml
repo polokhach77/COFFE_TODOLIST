@@ -1,0 +1,276 @@
+﻿@{ ViewData["Title"] = "Home Page"; }
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> doc</title>
+
+    <link rel="stylesheet" href="/lib/fonts/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ 
+  <header class="head"> 
+      
+     <div class="text-center">
+    
+</div>
+ 
+<hr />
+<center>
+    
+</center>
+ </header>
+<style>
+
+    #divEmailForm {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 100px 200px;
+    }
+</style>
+    <main>
+
+       
+        <section  class="hero" >
+            <div class="buttons">
+        <a asp-action="Login" asp-controller="Account" class="btn-hover">Login</a>
+        <a asp-action="Register" asp-controller="Account" class="btn-hover">Registration</a>
+    </div>
+            <div class="container">
+                <h1 class="cont">Welcome to the Cafe</h1>
+                <p class="lead">Just your relaxion area</p>
+            </div>
+        </section>
+
+ 
+        <section class="section-padding section-grey">
+            <div class="container">
+                <div class="split-section">
+                    <div class="split-section__text">
+                        <h2 > Latte</h2>
+                        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque ducimus error excepturi, fugit ipsa iure laudantium magni modi nobis officia placeat possimus quod reprehenderit, similique, sit ullam voluptate voluptates.</p>
+
+                    </div>
+                    <div class="split-section__image">
+                        <img src="~/lib/Images/mike-kenneally-tNALoIZhqVM-unsplash.jpg" alt="Laptop" class="img-shadow img-rounded">
+                    </div>
+
+        </section>
+
+        <section class="section-padding section-grey">
+
+            <div class="container">
+                <div class="split-section">
+                    <div class="split-section__text">
+                        <img src="~/lib/Images/miti-DFtvglCPWjY-unsplash.jpg" alt="Laptop" class="img-shadow img-rounded">
+
+
+                    </div>
+                    <div class="split-section__image">
+                        <h2 >Tea</h2>
+
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque ducimus error excepturi, fugit ipsa iure laudantium magni modi nobis officia placeat possimus quod reprehenderit, similique, sit ullam voluptate voluptates.</p>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+        <section class="section-padding section-grey">
+
+            <div class="container">
+                <div class="split-section">
+                    <div class="split-section__text">
+                        <img src="~/lib/Images/jason-wong-kSlL887znkE-unsplash.jpg" alt="Laptop" class="img-shadow img-rounded">
+
+
+                    </div>
+                    <div class="split-section__image">
+                        <h2>Capuchin</h2>
+
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque ducimus error excepturi, fugit ipsa iure laudantium magni modi nobis officia placeat possimus quod reprehenderit, similique, sit ullam voluptate voluptates.</p>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+        <section class="section-padding section-grey">
+            <div class="container">
+                <div class="split-section">
+                    <div class="split-section__text">
+                        <h2> Coffee</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque ducimus error excepturi, fugit ipsa iure laudantium magni modi nobis officia placeat possimus quod reprehenderit, similique, sit ullam voluptate voluptates.</p>
+
+                    </div>
+                    <div class="split-section__image">
+                        <img src="~/lib/Images/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" alt="Laptop" class="img-shadow img-rounded">
+                    </div>
+
+        </section>
+  
+    </main>
+        <section class="sec">
+            <div class="wrapper">
+  <h1 class="ccc">Choose your drink</h1>
+  <div class="cols">
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="containers">
+					<div class="front" style="background-image: url(https://images.unsplash.com/photo-1623193893878-656ec0391ea1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)">
+						<div class="inner">
+							<p>Black tea</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="containers">
+					<div class="front" style="background-image: url(https://images.unsplash.com/photo-1597481499666-130f8eb2c9cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)">
+						<div class="inner">
+							<p>Green tea</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="containers">
+					<div class="front" style="background-image: url(https://images.unsplash.com/photo-1525480122447-64809d765ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)">
+						<div class="inner">
+							<p>Coffee</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="containers">
+					<div class="front" style="background-image: url(https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)">
+						<div class="inner">
+							<p>Latte</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+					</div>
+				</div>
+	
+           
+
+
+
+
+
+        </section>
+       
+        <section class="secc">
+              <div class="ppp">
+                 <h1><b>Choose your cake:</b></h1></div>
+              <div class="box">
+                
+             <div class="card">
+                 
+        <div class="imgBx">
+           
+            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="images">
+        </div>
+        <div class="details">
+            <h2>Caramel cake<br><span>$21</span></h2>
+        </div>
+      </div>
+    
+       <div class="card">
+         <div class="imgBx">
+            <img src="https://images.unsplash.com/photo-1560180474-e8563fd75bab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="images">
+         </div>
+         <div class="details">
+            <h2>Cake with jam<br><span>$23</span></h2>
+          </div>
+       </div>
+
+       <div class="card">
+         <div class="imgBx">
+            <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=503&q=80" alt="images">
+         </div>
+         <div class="details">
+            <h2>Cake with chokolate<br><span>$54</span></h2>
+          </div>
+       </div>
+ 
+  </div>
+        </section>
+    <!-- Footer -->
+    <footer>
+        <div class="pop"><h1><b>Contact us:</h1></div>
+        <div class="container">
+            <div class="footer-row">
+                <ul class="footer-social">
+                    <li>
+                        <a href="#">
+                            <img src="~/lib/Images/icons/facebook.svg" alt="WebDev on Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="~/lib/Images/icons/instagram.svg" alt="WebDev on Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="~/lib/Images/icons/youtube.svg" alt="WebDev on Youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="~/lib/Images/icons/twitter.svg" alt="WebDev on Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+   
+
+

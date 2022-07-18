@@ -1,0 +1,139 @@
+﻿body {
+    background: white;
+    margin: 0;
+}
+
+fieldset {
+    border: 5px red;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px 20px;
+    background-image: linear-gradient(to right,#421409, #c07737, rgba(226, 102, 53, 0.649), #701919);
+    box-shadow: #b14d13;
+    position: relative;
+}
+
+label, h2 {
+    font-size: 20px;
+    font-family: 'MV Boli';
+    color: white;
+}
+.textcols-item b {
+    font-family: 'MV Boli';
+    color: white;
+}
+.card-body h4, h6,p {
+    font-family: 'MV Boli';
+    color: white;
+}
+
+h1, h4 {
+    font-size: 20px;
+    font-family: 'MV Boli';
+    color: rgba(172, 14, 14, 0.919);
+}
+
+.control-lebel label {
+    font-family: 'MV Boli';
+    color: white;
+
+}
+
+.buttons {
+    margin-top:3%;
+    text-align: center;
+    position: relative;
+    font-family: 'MV Boli';
+}
+
+    .buttons a, .buttons input {
+        text-decoration-line: none;
+        color: black;
+        font-family: 'MV Boli';
+    }
+
+
+
+
+.form-group a {
+    text-decoration-line: none;
+    color: white;
+}
+
+.buttons a:hover, input:hover {
+    color: antiquewhite;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+    .btn-hover:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .btn-hover:focus {
+        outline: none;
+    }
+
+.btn-hover {
+    background-image: linear-gradient(to right,#421409, #c07737, #b14d13, #701919);
+    box-shadow: #b14d13;
+    
+}
+
+.row {
+    display: flex;
+}
+
+.image img {
+    width: 900px;
+    height: 707px;
+    margin-top: -204%;
+    border-radius: 20px 20px;
+}
+.card-body {
+    background-image: url(https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869);
+
+}
+.textcols-item {
+    background-image: url(https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869);
+    border: 0.5px solid silver;
+    margin: 3%;
+    box-shadow: #b14d13;
+}
+.but a {
+    text-decoration-line: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'MV Boli';
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.677);
+    border-radius: 10px;
+    box-shadow: 2px silver;
+}
+.but a:hover{
+    color:darkred;
+}

@@ -1,0 +1,76 @@
+﻿@model Dictionary<string, IEnumerable<To_do_list_NET_Club.Models.NoteModel>>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="/lib/fonts/style.css">
+  
+
+</head>
+<body>
+<div class="buttons">
+    <a asp-action="Create" class="btn-hover"><i class="far fa-plus-square"></i>Create Note</a>
+</div>
+
+
+<div class="textcols">
+    @foreach (var statusName in Model)
+    {
+        <div class="textcols-item ">
+            <center>
+                <b style="text-transform: uppercase">@statusName.Key</b>
+             
+
+                @foreach (var note in statusName.Value)
+                {
+                        <fieldset>
+                    <div class="container">
+                        
+                        <div class="card mx-auto" style="min-height: 200px; max-width: 300px; border-radius: 10px; background-color: #b7b7b7">
+                            <div class="card-body">
+                            
+                                <h4 class="card-title">@note.Head</h4>
+
+                                <h6 class="card-subtitle mb-2 text-muted">@note.User?.Email.Split('@').First()</h6>
+                                <p class="card-text" style="font-size: 14px">@note.MainText</p>
+                                <h6 class="card-subtitle mb-2 text-monospace">@note.StartDate.Value.ToString("dd.MM.yyyy") - @note.EndDate.Value.ToString("dd.MM.yyyy")</h6>
+                                <div class="but" >
+                                    @{
+                                        if (note.Status.Id != 1)
+                                        {
+                                            <a asp-action="MoveBack" asp-route-id="@note.Id" class="k"><i class="far fa-plus-square">←</i></a>
+                                        }
+                                    }
+
+                                    <a asp-action="Edit" asp-route-id="@note.Id" class="k"><i class="far fa-plus-square"></i>Edit</a>
+                                    <a asp-action="Delete" asp-route-id="@note.Id" class="k"><i class="far fa-plus-square"></i>Delete</a>
+
+                                    @{
+                                        if (note.Status.Id != 3)
+                                        {
+                                            <a asp-action="MoveNext" asp-route-id="@note.Id" class="k"><i class="far fa-plus-square">→</i></a>
+                                        }
+                                    }
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </fieldset>
+                    <p></p>
+                }
+            </center>
+        </div>
+    }
+</div>
+</body>
+
+</html>

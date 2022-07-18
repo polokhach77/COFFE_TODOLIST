@@ -1,0 +1,58 @@
+﻿@model To_do_list_NET_Club.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Registration";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="/lib/fonts/StyleSheet.css">
+     <link rel="stylesheet" href="/lib/fonts/script.js">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+<h2><b>Registration</b></h2>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <fieldset>
+        <form asp-action="Register" asp-controller="Account" asp-anti-forgery="true">
+            <div class="validation, text-danger" asp-validation-summary="ModelOnly" />
+            <div>
+                <div>
+                    <label asp-for="Email" class="control-label">Enter Email</label><br />
+                    <input type="text" asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger" />
+                </div>
+                <div>
+                    <label asp-for="Password" class="control-label">Enter password</label><br />
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger" />
+                </div>
+                <div>
+                    <label asp-for="ConfirmPassword" class="control-label">Confirm Password</label><br />
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger" />
+                </div>
+                <p></p>
+                <div class="form-group">
+                    <input type="submit" value="Register" class="btn-hover" />
+                </div>
+            </div>
+        </form>
+        </fieldset>
+        <div class="image">
+        <img src="~/lib/Images/nordwood-themes-ivP3TYdLvw0-unsplash.jpg" />
+        </div>
+    </div>
+</div>
+</body>
+</html>

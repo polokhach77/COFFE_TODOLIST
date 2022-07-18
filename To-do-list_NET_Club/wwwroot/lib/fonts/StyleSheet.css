@@ -1,0 +1,98 @@
+﻿body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+fieldset {
+    border: 5px red;
+    padding: 70px;
+    padding-left: 30px;
+    border-radius: 20px 20px;
+    background-image: linear-gradient(to right,#421409, #c07737, rgba(226, 102, 53, 0.649), #701919);
+    box-shadow: #b14d13;
+    position:relative;
+}
+label {
+    font-size: 20px;
+    font-family: 'MV Boli';
+    color:white;
+
+}
+h2 {
+    font-size: 20px;
+    padding:15px;
+    font-family: 'MV Boli';
+    color: rgba(172, 14, 14, 0.919);
+}
+.buttons {
+    margin-top: 30%;
+    text-align: center;
+    position: relative;
+}
+
+    .buttons a ,.buttons input{
+        text-decoration-line: none;
+        color: black;
+    }
+
+
+
+
+
+
+        .buttons a:hover, input:hover {
+            color: antiquewhite;
+        }
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+    .btn-hover:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .btn-hover:focus {
+        outline: none;
+    }
+
+.btn-hover {
+    background-image: linear-gradient(to right,#421409, #c07737, #b14d13, #701919);
+    box-shadow: #b14d13;
+}
+.row{
+    display:flex;
+}
+.image img{
+    width:700px;
+    height:527px;
+    margin-top:-153%;
+    border-radius:20px 20px;
+
+}
